@@ -50,27 +50,3 @@
            
     </tr>
 </table>
-    
-    <?php
-$files = array(
-    "malicious_download1.txt",
-    "malicious_download2.txt"
-);
-
-foreach ($files as $file) {
-    $filepath = "/assets/sample malicious files/" . $file;
-
-    header('Content-Description: File Transfer');
-    header('Content-Type: application/octet-stream');
-    header('Content-Disposition: attachment; filename="' . $file . '"');
-    header('Content-Transfer-Encoding: binary');
-    header('Expires: 0');
-    header('Cache-Control: must-revalidate');
-    header('Pragma: public');
-    header('Content-Length: ' . filesize($filepath));
-    ob_clean();
-    flush();
-    readfile($filepath);
-    exit;
-}
-?>
