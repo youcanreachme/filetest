@@ -34,3 +34,47 @@
            
     </tr>
 </table>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test URL Tile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .tile {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+        .tile h2 {
+            margin-top: 0;
+        }
+        .tile a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .tile a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="tile">
+        <h2>Test URL</h2>
+        <p>Click the link below to visit the test URL with a hash:</p>
+        <a href="https://example.com/page#section" target="_blank">Go to Test URL</a>
+    </div>
